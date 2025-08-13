@@ -11,7 +11,7 @@ import time
 def sptext():
     recognizer=sr.Recognizer() #Calling the Recognizer class
     with sr.Microphone() as source:
-        print("Gajju Listening...")#Speak after this is printed..
+        print("J.A.R.V.I.S Listening...")#Speak after this is printed..
         recognizer.adjust_for_ambient_noise(source) #Removes noise from background
         #Ek audio func. define kro joh ki source se aaye data ko listen kre
         audio=recognizer.listen(source)
@@ -91,4 +91,5 @@ if __name__ == '__main__': #This special statement will seprate the code written
             time.sleep(2)
         #-->At last giving a time delay after execution of each instruction    
     #else:
+
      #   print("Thanks")
